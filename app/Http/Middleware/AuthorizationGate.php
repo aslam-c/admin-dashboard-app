@@ -24,7 +24,7 @@ class AuthorizationGate
                 return $next($request);
             }
             else{
-                session()->flash('warning','You are not authorized to view this route');
+                session()->flash('warning','You are not authorized');
                 $intendedUrl=$request->path();
                 return redirect('login?next='.$intendedUrl);
             }
