@@ -4,23 +4,23 @@
 
 ##### migrate the database with
 
-php artisan migrate
+`php artisan migrate`
 
 ##### Seed the database with
 
-php artisan db:seed
+`php artisan db:seed`
 
 ##### Launch the app with
 
-php artisan serve
+`php artisan serve`
 
-use these sample values for 3 types (roles) of users to login to the app
+use these sample credentials for 3 types (roles) of users to login to the app
 
 ###### sample user names (email)
 
-user - user@gmail.com
-admin user- adminuser@gmail.com
-super admin user - superadmin@gmail.com
+user - user@gmail.com\
+admin user- adminuser@gmail.com\
+super admin user - superadmin@gmail.com\
 
 ###### password for all users
 
