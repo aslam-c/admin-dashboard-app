@@ -20,7 +20,7 @@ use these sample credentials for 3 types (roles) of users to login to the app
 
 user - user@gmail.com\
 admin user- adminuser@gmail.com\
-super admin user - superadmin@gmail.com\
+super admin user - superadmin@gmail.com
 
 ###### password for all users
 
