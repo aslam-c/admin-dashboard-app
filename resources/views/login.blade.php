@@ -75,8 +75,16 @@
         <form action="{{url('doLogin')}}" method="POST">
             <label for="email">Email Address</label>
             <input type="email" class="form-control form-cotrol-sm" name='email' placeholder="asd@abc.com" autocomplete="off" required>
+            @if($errors->has('email'))
+                <span class="text-danger">{{$errors->first('email')}}</span>
+            @endif
+            <br>
             <label for="password">Password</label>
             <input type="password" class="form-control form-cotrol-sm" name='password' placeholder="********" autocomplete="off" required>
+            @if($errors->has('password'))
+            <span class="text-danger">{{$errors->first('password')}}</span>
+            @endif
+            <br>
             <label for="role">User role</label>
             <select name="role" class="form-control form-control-sm">
                 @foreach($roles as $role)
@@ -84,6 +92,11 @@
                 @endforeach
             </select>
             @csrf
+            <br>
+            @if($errors->has('role'))
+            <span class="text-danger">{{$errors->first('role')}}</span>
+            @endif
+
             <input type="submit" class="form-control mt-1 btn-primary" value="LogIn">
         </form>
     </div><!-- /.container-fluid -->
